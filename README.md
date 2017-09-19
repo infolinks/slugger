@@ -1,5 +1,7 @@
 # Slugger
 
+[![Build Status](https://travis-ci.org/infolinks/slugger.svg?branch=master)](https://travis-ci.org/infolinks/slugger)
+
 Slugger is a small script to create a slug from a given input.
 
 Slugger is distributed as a Docker container, so you can run it anywhere
