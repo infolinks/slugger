@@ -35,6 +35,8 @@ pipeline {
                 branch 'master'
             }
             steps {
+                sh 'pwd'
+                sh 'ls -la'
                 script {
                     def registryUrl = "https://index.docker.io/v1/"
                     def registryCredentialsId = "dockerhub-infolinksjenkins-username-password"
