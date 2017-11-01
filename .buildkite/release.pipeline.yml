@@ -1,0 +1,9 @@
+steps:
+
+  - label: Build versioned Docker image
+    command:
+      - gcloud docker -- pull gcr.io/infolinks-gcr/slugger:${BUILDKITE_COMMIT}
+      - gcloud docker -- tag gcr.io/infolinks-gcr/slugger:${BUILDKITE_COMMIT} infolinks/slugger:${VERSION}
+      - gcloud docker -- push infolinks/slugger:${VERSION}
+      - gcloud docker -- tag gcr.io/infolinks-gcr/slugger:${BUILDKITE_COMMIT} infolinks/slugger:latest
+      - gcloud docker -- push infolinks/slugger:latest

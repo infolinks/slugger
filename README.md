@@ -12,7 +12,7 @@ and get a consistent slug back - like this:
 
 To save it in a Bash variable:
 
-    $ SLUG=$(docker run infolinnks/slugger "My Feature")
+    $ SLUG=$(docker run infolinks/slugger "My Feature")
     $ echo ${SLUG}
     my-feature
 
