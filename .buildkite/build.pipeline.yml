@@ -1,7 +1,6 @@
 steps:
 
-  - label: Docker image
+  - label: Build Docker image
     command:
-      - TAG=${BUILDKITE_TAG:-${BUILDKITE_COMMIT}}
-      - gcloud docker -- build --tag gcr.io/infolinks-gcr/slugger:${TAG} .
-      - gcloud docker -- push gcr.io/infolinks-gcr/slugger:${TAG}
+      - gcloud docker -- build --tag gcr.io/infolinks-gcr/slugger:${BUILDKITE_COMMIT} .
+      - gcloud docker -- push gcr.io/infolinks-gcr/slugger:${BUILDKITE_COMMIT}
