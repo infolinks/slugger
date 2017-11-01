@@ -1,6 +1,6 @@
 # Slugger
 
-[![Build Status](https://travis-ci.org/infolinks/slugger.svg?branch=master)](https://travis-ci.org/infolinks/slugger)
+[![Build status](https://badge.buildkite.com/d540425404497643294edd72e8134fad2f01fce0cf8d857034.svg)](https://buildkite.com/infolinks/slugger)
 
 Slugger is a small script to create a slug from a given input.
 
